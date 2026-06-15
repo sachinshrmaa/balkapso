@@ -2,6 +2,7 @@
 
 import { useState, useEffect, FormEvent } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { 
   Building2, 
   ShieldCheck, 
@@ -16,7 +17,11 @@ import {
   ChevronLeft, 
   ChevronRight, 
   Quote,
-  HardHat
+  HardHat,
+  PencilRuler,
+  Wrench,
+  Search,
+  Activity
 } from "lucide-react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -64,7 +69,7 @@ export default function Home() {
     name: "",
     email: "",
     phone: "",
-    service: "Commercial Construction",
+    service: "Structural Design Consultancy",
     message: ""
   });
 
@@ -117,18 +122,21 @@ export default function Home() {
         <div className={`${styles.heroGrid} container`}>
           <div className={styles.heroContent}>
             <div className={styles.badge}>
-              <ShieldCheck size={16} /> Engineering the Future
+              <ShieldCheck size={16} /> Sikkim's Structural Specialists
             </div>
             <h1 className={styles.heroTitle}>
-              Building landmarks with <span className={styles.heroTitleHighlight}>structural integrity</span> and modern design.
+              Specialists in <span className={styles.heroTitleHighlight}>Structural Design</span> and Retrofitting of Existing Buildings.
             </h1>
             <p className={styles.heroDescription}>
-              Balkapso Constructions delivers state-of-the-art commercial hubs, luxury residential estates, and resilient public infrastructure. Supported by years of industry engineering excellence.
+              BALKAPSO Construction is a niche structural engineering consultancy based in Sikkim, helping homeowners, institutions, businesses, and government agencies design safer structures and strengthen ageing or distressed buildings through practical, research-backed engineering solutions.
             </p>
+            <div style={{ marginBottom: "24px", color: "var(--color-primary-dark)", fontWeight: "600", fontSize: "1.05rem" }}>
+              Designing the Future. Strengthening the Existing. Trust is what we build well.
+            </div>
             <div className={styles.heroCtas}>
-              <a href="#projects">
+              <a href="#services">
                 <button className={styles.primaryBtn}>
-                  Explore Projects <ArrowRight size={18} />
+                  Our Services <ArrowRight size={18} />
                 </button>
               </a>
               <a href="#contact">
@@ -244,47 +252,33 @@ export default function Home() {
 
           <ScrollReveal direction="right" className={styles.aboutContent}>
             <div className={styles.aboutHeader}>
-              <span className={styles.sectionSubtitle}>Who We Are</span>
-              <h2 className={styles.sectionTitle}>Precision engineering, exceptional execution.</h2>
+              <span className={styles.sectionSubtitle}>Why This Focus Matters</span>
+              <h2 className={styles.sectionTitle}>Intersection of Design & Retrofitting</h2>
             </div>
             <p className={styles.aboutDescription}>
-              Founded on the pillars of safety, engineering innovation, and absolute accountability, Balkapso Constructions has evolved into a leading national general contractor. We handle design-build developments from drafting blueprints to high-grade finishes.
+              Few organisations understand both how to design new structures efficiently and how to diagnose and strengthen existing ones when they begin to fail. That intersection is where BALKAPSO has built its reputation.
             </p>
             <div className={styles.aboutChecklist}>
               <div className={styles.checkItem}>
                 <CheckCircle2 className={styles.checkIcon} size={20} />
                 <div>
-                  <h4 className={styles.checkTitle}>Architectural Design</h4>
-                  <p className={styles.checkText}>Custom modern floorplans and structural drafting.</p>
+                  <h4 className={styles.checkTitle}>1. Structural Design</h4>
+                  <p className={styles.checkText}>Designing Structures That Perform for Generations. RCC Design, Steel Design, Earthquake Resistant Design, Foundation Design, Water Retaining Structures, Peer Review.</p>
                 </div>
               </div>
               <div className={styles.checkItem}>
                 <CheckCircle2 className={styles.checkIcon} size={20} />
                 <div>
-                  <h4 className={styles.checkTitle}>General Contracting</h4>
-                  <p className={styles.checkText}>Supervised material procurement and complete safety focus.</p>
-                </div>
-              </div>
-              <div className={styles.checkItem}>
-                <CheckCircle2 className={styles.checkIcon} size={20} />
-                <div>
-                  <h4 className={styles.checkTitle}>Seismic Reinforcement</h4>
-                  <p className={styles.checkText}>Top grade concrete and structural reinforcement engineering.</p>
-                </div>
-              </div>
-              <div className={styles.checkItem}>
-                <CheckCircle2 className={styles.checkIcon} size={20} />
-                <div>
-                  <h4 className={styles.checkTitle}>LEED Sustainability</h4>
-                  <p className={styles.checkText}>Eco-conscious raw resources and solar layouts.</p>
+                  <h4 className={styles.checkTitle}>2. Structural Retrofitting</h4>
+                  <p className={styles.checkText}>Strengthening Existing Structures with Confidence. RCC Jacketing, CFRP Strengthening, Epoxy Injection & Grouting, Rehabilitation Planning, Strengthening Design, Distress Assessment.</p>
                 </div>
               </div>
             </div>
-            <a href="#contact">
+            <Link href="/about">
               <button className={styles.primaryBtn}>
                 Learn More About Us <ArrowRight size={18} />
               </button>
-            </a>
+            </Link>
           </ScrollReveal>
 
         </div>
@@ -296,10 +290,10 @@ export default function Home() {
           
           <ScrollReveal direction="down">
             <div className={styles.sectionHeader}>
-              <span className={styles.sectionSubtitle}>Our Expertise</span>
-              <h2 className={styles.sectionTitle}>Comprehensive Construction Services</h2>
+              <span className={styles.sectionSubtitle}>Our Niche Services</span>
+              <h2 className={styles.sectionTitle}>Specialised Structural Solutions</h2>
               <p className={styles.sectionDescription}>
-                We offer full-service construction planning and development tailored specifically to commercial, residential, and infrastructure sectors.
+                Providing research-backed structural engineering design, building rehabilitation, and non-destructive testing tailored to Sikkim's complex seismic realities.
               </p>
             </div>
           </ScrollReveal>
@@ -309,43 +303,43 @@ export default function Home() {
             {/* Service 1 */}
             <ScrollReveal direction="up" delay={0} className={styles.serviceCard}>
               <div className={styles.serviceIconWrapper}>
-                <Building2 size={30} />
+                <PencilRuler size={30} />
               </div>
-              <h3 className={styles.serviceTitle}>Commercial Construction</h3>
+              <h3 className={styles.serviceTitle}>Structural Design Consultancy</h3>
               <p className={styles.serviceText}>
-                High-rise corporate headquarters, regional shopping plazas, tech hubs, and logistic storage facilities engineered to maximize commercial performance.
+                Structural design solutions compliant with Indian Standards (IS Codes) while balancing safety, functionality, practical construction, cost, and long-term performance.
               </p>
-              <a href="#contact" className={styles.serviceLink}>
-                Learn More <ArrowRight size={16} />
-              </a>
+              <Link href="/services/structural-design" className={styles.serviceLink}>
+                Explore Service <ArrowRight size={16} />
+              </Link>
             </ScrollReveal>
 
             {/* Service 2 */}
             <ScrollReveal direction="up" delay={150} className={styles.serviceCard}>
               <div className={styles.serviceIconWrapper}>
-                <Users size={30} />
+                <Wrench size={30} />
               </div>
-              <h3 className={styles.serviceTitle}>Residential Developments</h3>
+              <h3 className={styles.serviceTitle}>Structural Retrofitting & Rehabilitation</h3>
               <p className={styles.serviceText}>
-                Bespoke modern architectural townhomes, custom estate villas, and multi-family high-density structures engineered for safety and aesthetic luxury.
+                Niche expertise in structural retrofitting and rehabilitation that restores safety, improves performance, and extends the service life of existing structures.
               </p>
-              <a href="#contact" className={styles.serviceLink}>
-                Learn More <ArrowRight size={16} />
-              </a>
+              <Link href="/services/structural-retrofitting" className={styles.serviceLink}>
+                Explore Service <ArrowRight size={16} />
+              </Link>
             </ScrollReveal>
 
             {/* Service 3 */}
             <ScrollReveal direction="up" delay={300} className={styles.serviceCard}>
               <div className={styles.serviceIconWrapper}>
-                <HardHat size={30} />
+                <Search size={30} />
               </div>
-              <h3 className={styles.serviceTitle}>Infrastructure Engineering</h3>
+              <h3 className={styles.serviceTitle}>Structural Assessment & NDT</h3>
               <p className={styles.serviceText}>
-                Large-scale public transport expressways, cable-stayed highway flyovers, water drainage networks, and bridge restorations built to stand the test of time.
+                Before you repair, understand the problem. Comprehensive investigations combining rigorous engineering judgement and Non-Destructive Testing.
               </p>
-              <a href="#contact" className={styles.serviceLink}>
-                Learn More <ArrowRight size={16} />
-              </a>
+              <Link href="/services/structural-assessment" className={styles.serviceLink}>
+                Explore Service <ArrowRight size={16} />
+              </Link>
             </ScrollReveal>
 
           </div>
@@ -369,7 +363,7 @@ export default function Home() {
           {/* Filtering Bar */}
           <ScrollReveal direction="scale" delay={100}>
             <div className={styles.filterBar}>
-              {["All", "Commercial", "Residential", "Infrastructure"].map((cat) => (
+              {["All", "Structural Design", "Retrofitting & Rehab", "Assessment & NDT"].map((cat) => (
                 <button 
                   key={cat}
                   className={`${styles.filterBtn} ${projectFilter === cat ? styles.filterBtnActive : ""}`}
@@ -423,34 +417,34 @@ export default function Home() {
           <ScrollReveal direction="left" className={styles.whyContent}>
             <div>
               <span className={styles.sectionSubtitle}>Our Advantage</span>
-              <h2 className={`${styles.sectionTitle} styles.whyTitle`}>Why Clients Partner with Balkapso</h2>
+              <h2 className={`${styles.sectionTitle} ${styles.whyTitle}`}>Why Partner with BALKAPSO</h2>
               <p className={styles.whyDescription}>
-                We distinguish ourselves through strict compliance with timeline milestones, active communication, and standardizing safety measures above regulatory requirements.
+                We combine technical rigor, Indian Standards compliance, and local geographical expertise to design safer structures and rehabilitate existing buildings in high-seismic zones.
               </p>
               
               <div className={styles.whyFeaturesGrid}>
                 <div className={styles.whyCard}>
                   <ShieldCheck className={styles.whyCardIcon} size={32} />
-                  <h4 className={styles.whyCardTitle}>Safety First Culture</h4>
-                  <p className={styles.whyCardText}>Zero accident milestones on commercial sites for over 8 consecutive quarters.</p>
+                  <h4 className={styles.whyCardTitle}>Earthquake & Seismic Rigor</h4>
+                  <p className={styles.whyCardText}>Expertise in IS 1893, IS 13920, and specialized seismic retrofitting details.</p>
                 </div>
 
                 <div className={styles.whyCard}>
-                  <Clock className={styles.whyCardIcon} size={32} />
-                  <h4 className={styles.whyCardTitle}>Timely Project Delivery</h4>
-                  <p className={styles.whyCardText}>Strict project timeline management guarantees delivery on or ahead of time.</p>
+                  <Activity className={styles.whyCardIcon} size={32} />
+                  <h4 className={styles.whyCardTitle}>Interpretation Over Readings</h4>
+                  <p className={styles.whyCardText}>Machines generate readings. Our experienced engineers interpret what those readings mean.</p>
                 </div>
 
                 <div className={styles.whyCard}>
                   <Users className={styles.whyCardIcon} size={32} />
-                  <h4 className={styles.whyCardTitle}>Expert Management</h4>
-                  <p className={styles.whyCardText}>Each site is supervised by licensed structural architects and general project managers.</p>
+                  <h4 className={styles.whyCardTitle}>Licensed Consultants</h4>
+                  <p className={styles.whyCardText}>Registered and licensed structural engineers specializing in mountainous terrains.</p>
                 </div>
 
                 <div className={styles.whyCard}>
                   <Building2 className={styles.whyCardIcon} size={32} />
-                  <h4 className={styles.whyCardTitle}>Sustainable Materials</h4>
-                  <p className={styles.whyCardText}>Sourcing recycled concrete, local steel, and energy saving ventilation units.</p>
+                  <h4 className={styles.whyCardTitle}>Practical Construction</h4>
+                  <p className={styles.whyCardText}>We design structural solutions that take into account local site realities and costs.</p>
                 </div>
               </div>
             </div>
@@ -559,8 +553,8 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className={styles.contactCardTitle}>Call Us Directly</h4>
-                    <p className={styles.contactCardText}>General Office: <a href="tel:+18005550199" className={styles.contactLink}>+1 (800) 555-0199</a></p>
-                    <p className={styles.contactCardText}>Sales & Estimates: <a href="tel:+18005550198" className={styles.contactLink}>+1 (800) 555-0198</a></p>
+                    <p className={styles.contactCardText}>Engineering Desk: <a href="tel:+919434012345" className={styles.contactLink}>+91 94340 12345</a></p>
+                    <p className={styles.contactCardText}>Support Desk: <a href="tel:+913592201100" className={styles.contactLink}>+91 (3592) 201100</a></p>
                   </div>
                 </div>
 
@@ -570,8 +564,8 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className={styles.contactCardTitle}>Email Inquiries</h4>
-                    <p className={styles.contactCardText}>Contracts Department: <a href="mailto:estimates@Balkapso.com" className={styles.contactLink}>estimates@Balkapso.com</a></p>
-                    <p className={styles.contactCardText}>Careers: <a href="mailto:careers@Balkapso.com" className={styles.contactLink}>careers@Balkapso.com</a></p>
+                    <p className={styles.contactCardText}>General: <a href="mailto:info@balkapso.com" className={styles.contactLink}>info@balkapso.com</a></p>
+                    <p className={styles.contactCardText}>Careers: <a href="mailto:careers@balkapso.com" className={styles.contactLink}>careers@balkapso.com</a></p>
                   </div>
                 </div>
 
@@ -580,9 +574,9 @@ export default function Home() {
                     <MapPin size={24} />
                   </div>
                   <div>
-                    <h4 className={styles.contactCardTitle}>Corporate HQ Office</h4>
-                    <p className={styles.contactCardText}>950 Construction Blvd, Suite 400</p>
-                    <p className={styles.contactCardText}>Chicago, IL 60601</p>
+                    <h4 className={styles.contactCardTitle}>Sikkim HQ Office</h4>
+                    <p className={styles.contactCardText}>NH-10, Deorali</p>
+                    <p className={styles.contactCardText}>Gangtok, Sikkim 737102</p>
                   </div>
                 </div>
 
@@ -591,8 +585,8 @@ export default function Home() {
               <div className={styles.mapPlaceholder}>
                 <MapPin size={32} color="var(--color-primary-light)" />
                 <div>
-                  <strong style={{ display: "block", color: "var(--color-text-dark)" }}>Interactive Site Location Map</strong>
-                  <span>Chicago HQ (Open: Mon - Fri: 8:00 AM - 5:00 PM)</span>
+                  <strong style={{ display: "block", color: "var(--color-text-dark)" }}>Interactive Office Location Map</strong>
+                  <span>Gangtok Headquarters (Open: Mon - Sat: 9:00 AM - 5:00 PM)</span>
                 </div>
               </div>
             </div>
@@ -644,18 +638,17 @@ export default function Home() {
                     />
                   </div>
                   <div className={styles.formGroup}>
-                    <label htmlFor="service" className={styles.formLabel}>Construction Sector</label>
+                    <label htmlFor="service" className={styles.formLabel}>Engineering Service</label>
                     <select 
                       id="service" 
-                      className={`${styles.formInput} styles.formSelect`}
+                      className={`${styles.formInput} ${styles.formSelect}`}
                       value={formData.service}
                       onChange={(e) => setFormData({...formData, service: e.target.value})}
                     >
-                      <option value="Commercial Construction">Commercial Construction</option>
-                      <option value="Residential Developments">Residential Developments</option>
-                      <option value="Infrastructure Engineering">Infrastructure Engineering</option>
-                      <option value="Architectural Blueprint Design">Architectural Blueprint Design</option>
-                      <option value="Retrofitting & Seismic Reinforcing">Retrofitting & Seismic Reinforcing</option>
+                      <option value="Structural Design Consultancy">Structural Design Consultancy</option>
+                      <option value="Structural Retrofitting & Rehabilitation">Structural Retrofitting & Rehabilitation</option>
+                      <option value="Structural Assessment & NDT">Structural Assessment & NDT</option>
+                      <option value="Peer Review & Design Verification">Peer Review & Design Verification</option>
                     </select>
                   </div>
                 </div>

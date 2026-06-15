@@ -29,7 +29,7 @@ export default function Header() {
         <Link href="/" className={styles.logo} id="nav-logo">
           <div className={styles.logoSymbol} style={{ overflow: "hidden", position: "relative" }}>
             <Image 
-              src="/images/logo.png" 
+              src="/logo.png" 
               alt="Balkapso Logo" 
               fill 
               sizes="38px"
@@ -53,8 +53,8 @@ export default function Header() {
 
         <div className={styles.navActions}>
           <div className={styles.contactInfoMini}>
-            <span>Call Professional Assistance</span>
-            <span className={styles.phoneNumber}>+1 (800) 555-0199</span>
+            <span>Engineering Desk</span>
+            <span className={styles.phoneNumber}>+91 94340 12345</span>
           </div>
           <Link href="/#contact">
             <button className={styles.quoteBtn}>Get a Quote</button>
@@ -79,7 +79,7 @@ export default function Header() {
         <Link href="/#why-us" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>Why Balkapso</Link>
         <Link href="/#contact" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>Contact Us</Link>
         <div style={{ marginTop: "10px", display: "flex", flexDirection: "column", gap: "10px" }}>
-          <span style={{ fontSize: "0.85rem", color: "var(--color-text-gray)" }}>Call: +1 (800) 555-0199</span>
+          <span style={{ fontSize: "0.85rem", color: "var(--color-text-gray)" }}>Call: +91 94340 12345</span>
           <Link href="/#contact" onClick={() => setMobileMenuOpen(false)}>
             <button className={styles.quoteBtn} style={{ width: "100%" }}>Get a Quote</button>
           </Link>

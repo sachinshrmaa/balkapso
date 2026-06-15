@@ -16,8 +16,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Balkapso Constructions | Premium Infrastructure & Modern Development",
-  description: "Premier construction, architectural engineering, and infrastructure development services. We build high-rise office towers, modern residential estates, and resilient public infrastructure with maximum safety and structural integrity.",
+  title: "BALKAPSO Construction | Structural Design & Retrofitting Specialists, Sikkim",
+  description: "Niche structural engineering consultancy based in Sikkim. Specialists in structural design, seismic retrofitting, rehabilitation of ageing buildings, and Non-Destructive Testing (NDT) compliant with Indian Standards.",
+  keywords: ["structural design", "structural retrofitting", "seismic rehabilitation", "non-destructive testing", "NDT Sikkim", "earthquake resistant design", "Sikkim structural consultancy"],
 };
 
 export default function RootLayout({

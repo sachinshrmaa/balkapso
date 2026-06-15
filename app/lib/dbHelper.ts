@@ -33,100 +33,100 @@ export interface Project {
 // Fallback showcase projects in case Firestore collection is empty or fails
 const FALLBACK_PROJECTS = [
   {
-    title: "The Vertex Corporate Tower",
-    category: "Commercial",
+    title: "Sikkim State Secretariat Seismic Evaluation",
+    category: "Assessment & NDT",
     image: "/images/project_commercial.png",
-    location: "Metro Downtown",
-    year: "2025",
-    description: "A state-of-the-art 42-story skyscraper serving as the regional headquarters for Vertex Group. The structure features high-strength concrete core stabilization, sustainable energy captures, and a modular low-emissivity glass curtain wall. Balkapso Constructions managed the design-build cycle from foundation drafting to high-end interior finishes.",
+    location: "Gangtok, East Sikkim",
+    year: "2024",
+    description: "Comprehensive seismic vulnerability assessment of the multi-story Sikkim State Secretariat block. Utilized NDT techniques including Rebound Hammer testing and Ultrasonic Pulse Velocity (UPV) to determine concrete quality and map sub-surface distress. The technical reporting formed the basis for subsequent rehabilitation planning.",
     specs: {
-      client: "Vertex Development Partners",
-      budget: "$82.4 Million",
-      size: "340,000 Sq. Ft.",
-      materials: "Grade 80 Reinforced Concrete, Structural Steel Core, Smart Double-Glazed Facade",
-      safetyRecord: "OSHA Star Certified, Zero Accident Incidents",
-      duration: "22 Months"
+      client: "Sikkim Public Works Department (PWD)",
+      budget: "₹18.5 Lakhs",
+      size: "85,000 Sq. Ft.",
+      materials: "Reinforced Concrete Frame, Rebar Detection Scanners, UPV Tester",
+      safetyRecord: "Zero Incident Site Milestones",
+      duration: "3 Months"
     }
   },
   {
     id: "2",
-    title: "AeroView Cable Bridge",
-    category: "Infrastructure",
+    title: "Teesta Stage-V Infrastructure Rehabilitation",
+    category: "Retrofitting & Rehab",
     image: "/images/project_infrastructure.png",
-    location: "Coastal Bypass Route 9",
-    year: "2024",
-    description: "A critical 1.2-mile municipal transport project consisting of a high-tension cable-stayed bridge spanning the eastern shipping bay. Engineered with marine-grade anti-corrosive concrete pilings and prestressed high-tensile steel cables to withstand severe seismology and coastal wind sheer. Completed under budget and three months ahead of schedule.",
-    specs: {
-      client: "State Department of Transportation",
-      budget: "$120.0 Million",
-      size: "1.2 Mile Span",
-      materials: "Marine Grade concrete, Post-Tensioned Cable stays, Caisson Foundations",
-      safetyRecord: "100% Safety Compliance Audit Award",
-      duration: "32 Months"
-    }
-  },
-  {
-    title: "LuxeHorizon Modern Estates",
-    category: "Residential",
-    image: "/images/project_residential.png",
-    location: "Hillside Crest",
+    location: "Singtam, East Sikkim",
     year: "2025",
-    description: "A luxury enclave consisting of 18 high-end custom architectural villas. Designed with modern minimalist lines, solar slate roofing, smart home automations, and geothermal heating loops. Sourced from local limestone quarries to match natural landscaping contours while ensuring maximum residential structural durability.",
+    description: "Structural rehabilitation and CFRP (Carbon Fiber Reinforced Polymer) strengthening of distress-prone auxiliary structures at the Teesta hydro station. Undertook RCC jacketing and epoxy injection of structural cracks to restore structural load capacity, resisting seismic movements and high vibrations.",
     specs: {
-      client: "LuxeHorizon Communities Inc.",
-      budget: "$45.0 Million",
-      size: "18 Villas (9,500 Sq. Ft. Avg)",
-      materials: "Natural Limestone, Premium Eco-Timber, Smart Solar Roof Slates",
-      safetyRecord: "Zero Incident Site Milestones",
-      duration: "18 Months"
+      client: "NHPC Limited",
+      budget: "₹1.4 Crores",
+      size: "Auxiliary Complex",
+      materials: "CFRP Sheets, High-strength Epoxy Grout, Micro-concrete Jacketing",
+      safetyRecord: "100% Safety Compliance Award",
+      duration: "8 Months"
     }
   },
   {
-    title: "Solis Smart Residential Cluster",
-    category: "Residential",
+    title: "Namchi Multi-Level Institutional Block",
+    category: "Structural Design",
     image: "/images/project_residential.png",
-    location: "East Valley Expansion",
-    year: "2026",
-    description: "An energy-independent residential housing project incorporating structural insulation panel cores, solar micro-grids, and decentralized greywater filtration. Balkapso is managing complete land grading, pipeline utility grids, and building assemblies to meet LEED Platinum parameters.",
+    location: "Namchi, South Sikkim",
+    year: "2025",
+    description: "Complete structural engineering design of a new five-story institutional building incorporating earthquake-resistant RCC frame technology. Design compliant with Indian Standards IS 1893 (Seismic Design Criteria) and IS 13920 (Ductile Detailing), taking into account steep slope foundations and soft soil configurations.",
     specs: {
-      client: "GreenSpaces Residential Ltd",
-      budget: "$38.0 Million",
-      size: "12 Buildings (120 Apartments)",
-      materials: "Thermal Insulated Panels, Greywater Filtration Grid, Geothermal Loops",
-      safetyRecord: "OSHA Merit Award Project",
-      duration: "24 Months Scheduled"
+      client: "Sikkim Education Department",
+      budget: "₹8.2 Crores",
+      size: "65,000 Sq. Ft.",
+      materials: "Grade M30 Concrete, Fe 500D TMT Steel Reinforcements, Pile Foundations",
+      safetyRecord: "Zero Incident Site Milestones",
+      duration: "14 Months"
     }
   },
   {
-    title: "Nexus Commerce Hub & Plaza",
-    category: "Commercial",
+    title: "Jorethang Market Plaza Peer Review",
+    category: "Structural Design",
     image: "/images/hero_building.png",
-    location: "North Transit Zone",
+    location: "Jorethang, South Sikkim",
     year: "2024",
-    description: "A mixed-use commercial center including outdoor retail corridors, office suites, and underground transit integration. Engineered utilizing a composite steel deck structure and architectural polished concrete pillars. Includes modern ventilation grids to optimize building-wide energy performance.",
+    description: "Independent structural peer review and design verification of the composite steel and concrete commercial plaza in Jorethang. Conducted detailed computational frame analysis to verify wind and seismic load resistance, suggesting key foundation adjustments for slope stability.",
     specs: {
-      client: "Nexus Corp Development",
-      budget: "$60.0 Million",
-      size: "220,000 Sq. Ft.",
-      materials: "Polished Concrete Pillars, Low-E Glazed Envelope, Composite Steel Decks",
-      safetyRecord: "Zero Injuries Award",
-      duration: "18 Months"
+      client: "Urban Development Department",
+      budget: "₹4.5 Crores (Project Value)",
+      size: "45,000 Sq. Ft.",
+      materials: "E250 Structural Steel, Composite Slab Decking, Design Verification Software",
+      safetyRecord: "Zero Incidents Award",
+      duration: "2 Months"
     }
   },
   {
-    title: "Oceanfront Concrete Expressway",
-    category: "Infrastructure",
-    image: "/images/project_infrastructure.png",
-    location: "Bay Terminal Link",
+    title: "Gangtok Commercial Hotel Retrofitting",
+    category: "Retrofitting & Rehab",
+    image: "/images/project_commercial.png",
+    location: "Deorali, Gangtok",
     year: "2026",
-    description: "A complex coastal highway elevation project aimed at reducing transit congestion near the shipping port. Features marine-grade caissons, anti-corrosive epoxy reinforcing bars, and prestressed structural bridge arches designed for high-density heavy vehicle weights.",
+    description: "Seismic retrofitting design and implementation for an existing six-story hospitality structure. The structure was reinforced using steel braced frames and concrete jacketing of the weak columns, improving building ductility and stability without altering architectural functionality.",
     specs: {
-      client: "State Port & Highways Authority",
-      budget: "$95.0 Million",
-      size: "4.5 Elevated Miles",
-      materials: "Epoxy Reinforcing Bars, Marine Grade Caissons, Prestressed Arches",
-      safetyRecord: "Full Marine-Work Safety Compliant",
-      duration: "28 Months Scheduled"
+      client: "Summit Hospitality Group",
+      budget: "₹65 Lakhs",
+      size: "30,000 Sq. Ft.",
+      materials: "IS 2062 Mild Steel Bracings, Self-Compacting Concrete, Epoxy Anchors",
+      safetyRecord: "Zero Accidents Milestone",
+      duration: "6 Months"
+    }
+  },
+  {
+    title: "Rangpo High-Rise Distress Audit",
+    category: "Assessment & NDT",
+    image: "/images/project_infrastructure.png",
+    location: "Rangpo, East Sikkim",
+    year: "2026",
+    description: "Non-destructive testing and technical interpretation of concrete degradation in a high-rise industrial facility near the border. Investigations included rebar cover depth assessment, carbonation depth tests, and core pull-out tests to establish safe residual service life and plan strengthening phases.",
+    specs: {
+      client: "Alkem Laboratories Complex",
+      budget: "₹12.0 Lakhs",
+      size: "120,000 Sq. Ft.",
+      materials: "Proceq Covermeter, Carbonation Indicators, Concrete Core Drills",
+      safetyRecord: "OSHA & PWD Standard Compliant",
+      duration: "1.5 Months"
     }
   }
 ];
@@ -232,11 +232,11 @@ export async function fetchInquiries(): Promise<Inquiry[]> {
     return [
       {
         id: "mock-1",
-        name: "Jonathan Hughes",
-        email: "j.hughes@example.com",
-        phone: "+1 (555) 321-9876",
-        service: "Commercial Construction",
-        message: "We are interested in contracting Balkapso for our upcoming 5-story office annex in downtown. Looking for cost estimation details.",
+        name: "Karma Gyatso",
+        email: "karma.g@example.com",
+        phone: "+91 98320 12345",
+        service: "Structural Retrofitting & Rehabilitation",
+        message: "We have noticed vertical cracks in our institutional building columns in Gangtok. We need a distress assessment and retrofitting plan.",
         timestamp: new Date().toISOString()
       }
     ];

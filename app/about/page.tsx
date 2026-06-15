@@ -22,50 +22,50 @@ import styles from "./about.module.css";
 const TIMELINE = [
   {
     year: "2011",
-    title: "Company Founded",
-    text: "Balkapso Constructions was established in Chicago with a focus on local masonry, structural contracting, and architectural restoration."
+    title: "Firm Established",
+    text: "BALKAPSO was established in Gangtok, Sikkim, with a focus on local terrain structural drafting, design verification, and site inspections."
   },
   {
     year: "2015",
-    title: "Entering Commercial Skyways",
-    text: "Successfully completed our first 15-story corporate headquarters plaza, establishing our name in mid-rise structural engineering."
+    title: "Structural Design Focus",
+    text: "Expanded services into full RCC structural design consultancy for multi-level buildings under steep Himalayan slope configurations."
   },
   {
     year: "2019",
-    title: "Infrastructure Expansion",
-    text: "Awarded our first municipal contract for the AeroView Cable Bridge bypass, scaling our workforce with heavy concrete machinery."
+    title: "Seismic Retrofitting Pioneering",
+    text: "Pioneered specialized CFRP strengthening and RCC jacketing details for distressed institutional complexes in East Sikkim."
   },
   {
     year: "2022",
-    title: "Carbon-Neutral Commitment",
-    text: "Pioneered sustainable concrete structures and standardized solar installations, receiving the regional LEED Gold Alliance Award."
+    title: "NDT Infrastructure Scaling",
+    text: "Acquired advanced Non-Destructive Testing (NDT) gear, standardizing Rebound Hammer, UPV, and rebar detection cover surveys."
   },
   {
     year: "2025",
-    title: "National Heavy Contractor",
-    text: "Commenced high-density smart residential zones and high-rise developments nationally, marking over 150 project completions."
+    title: "Leading Regional Specialists",
+    text: "Established as the go-to niche structural engineering and rehabilitation consultancy in the region, completing over 150 evaluations."
   }
 ];
 
 // Leadership Data
 const LEADERS = [
   {
-    name: "Arthur Pendelton",
-    role: "President & CEO",
-    bio: "Arthur has over 25 years of structural development experience. He oversees national corporate relations and safety policies.",
+    name: "Tashi Namgyal",
+    role: "Founder & Managing Director",
+    bio: "Tashi has over 25 years of structural development experience in the Himalayan region, specializing in retrofitting existing masonry and RCC buildings.",
     avatar: "/images/project_commercial.png"
   },
   {
-    name: "Elena Rostova",
-    role: "Chief Architect & Designer",
-    bio: "Elena holds a Master's in Urban Architecture from MIT. She leads the blueprint planning and sustainable designs division.",
-    avatar: "/images/hero_building.png"
+    name: "David Lepcha",
+    role: "Lead Structural Engineer",
+    bio: "David is a registered structural consultant with 18 years of experience in landslide-prone foundation designs and seismic ductile detailing.",
+    avatar: "/images/project_infrastructure.png"
   },
   {
-    name: "David Vance",
-    role: "Head of Structural Engineering",
-    bio: "David is a licensed structural engineer with 18 years of experience in high-rise steel reinforcing and seismology compliance.",
-    avatar: "/images/project_infrastructure.png"
+    name: "Elena Rai",
+    role: "Head of NDT & Assessment",
+    bio: "Elena leads our Non-Destructive Testing division. She is a specialist in concrete diagnostics and distress assessment interpretation.",
+    avatar: "/images/hero_building.png"
   }
 ];
 
@@ -128,9 +128,9 @@ export default function AboutPage() {
       {/* Page Hero */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>Precision Engineering, Concrete Trust</h1>
+          <h1 className={styles.heroTitle}>Designing the Future. Strengthening the Existing.</h1>
           <p className={styles.heroSubtitle}>
-            Learn how Balkapso Constructions has spent over 15 years building landmarks and resilient public structures safely.
+            Learn how BALKAPSO Construction has built a reputation in Sikkim through research-backed structural engineering and rehabilitation.
           </p>
         </div>
         <div className={styles.heroBgPattern}></div>
@@ -142,15 +142,15 @@ export default function AboutPage() {
           <ScrollReveal direction="left" className={styles.storyContent}>
             <div>
               <span>ESTABLISHED 2011</span>
-              <h2>A Legacy of Innovation & Structural Excellence</h2>
+              <h2>Seismic Safety & Structural Endurance in the Himalayas</h2>
               <p>
-                Balkapso Constructions was built on a simple promise: construct structures that endure for generations, safely, on schedule, and with transparent budget allocations.
+                BALKAPSO was built on a simple promise: help homeowners, institutions, businesses, and government agencies design safer structures and strengthen ageing or distressed buildings through practical, research-backed engineering solutions.
               </p>
               <p>
-                What started as a boutique design-build group in Illinois has expanded into a premier national engineering contractor. Today, our multidisciplinary team of licensed architects, structural managers, and concrete technicians coordinate to deliver state-of-the-art skyscrapers, municipal bridges, and smart residential clusters.
+                What started as a specialized detailing office in Gangtok has expanded into a leading regional structural engineering consultancy. Today, our multidisciplinary team of registered engineers and diagnostics technicians coordinate to deliver state-of-the-art earthquake resistant designs, distress audits, and building retrofits.
               </p>
               <p>
-                We prioritize strict compliance with ISO safety guidelines and sources local materials to reduce structural carbon footprint.
+                Few organisations understand both how to design new structures efficiently and how to diagnose and strengthen existing ones when they begin to fail. That intersection is where BALKAPSO has built its reputation.
               </p>
             </div>
           </ScrollReveal>
@@ -174,7 +174,7 @@ export default function AboutPage() {
           <ScrollReveal direction="down">
             <div style={{ textAlign: "center", marginBottom: "50px" }}>
               <span style={{ color: "var(--color-primary-light)", fontWeight: "700", textTransform: "uppercase", fontSize: "0.85rem", letterSpacing: "0.08em" }}>Our Pillars</span>
-              <h2 style={{ fontSize: "2rem", color: "var(--color-text-dark)", marginTop: "8px" }}>The Values Driving Our Projects</h2>
+              <h2 style={{ fontSize: "2rem", color: "var(--color-text-dark)", marginTop: "8px" }}>The Values Driving Our Solutions</h2>
             </div>
           </ScrollReveal>
 
@@ -183,7 +183,7 @@ export default function AboutPage() {
               <ShieldCheck className={styles.valueIcon} size={36} />
               <h3 className={styles.valueTitle}>Absolute Safety</h3>
               <p className={styles.valueText}>
-                We maintain zero-accident workplace milestones through regular OSHA training, safety gear compliance, and strict structural checks.
+                We prioritize the security of human lives by designing structures strictly compliant with Indian Standards seismic criteria and ductile detailing codes.
               </p>
             </ScrollReveal>
 
@@ -191,7 +191,7 @@ export default function AboutPage() {
               <Award className={styles.valueIcon} size={36} />
               <h3 className={styles.valueTitle}>Quality Engineering</h3>
               <p className={styles.valueText}>
-                Using grade-A raw concrete, premium steel framing, and sound seismic designs to guarantee stability and structural endurance.
+                Leveraging state-of-the-art design verification and Non-Destructive Testing to guarantee the stability and endurance of every project.
               </p>
             </ScrollReveal>
 
@@ -199,15 +199,15 @@ export default function AboutPage() {
               <Clock className={styles.valueIcon} size={36} />
               <h3 className={styles.valueTitle}>Milestone Integrity</h3>
               <p className={styles.valueText}>
-                We respect our developers' timelines. Active management and agile supply networks ensure we deliver on or ahead of schedule.
+                Respecting timelines and providing prompt assessment, verification, and retrofitting plans to reduce repair complexity.
               </p>
             </ScrollReveal>
 
             <ScrollReveal direction="up" delay={450} className={styles.valueCard}>
-              <Compass className={styles.valueIcon} size={36} />
-              <h3 className={styles.valueTitle}>Green Innovation</h3>
+              <HardHat className={styles.valueIcon} size={36} />
+              <h3 className={styles.valueTitle}>Practical Solutions</h3>
               <p className={styles.valueText}>
-                Standardizing thermal insulation, smart ventilation grids, and local materials to deliver LEED certified properties.
+                We design structural solutions that balance safety, functionality, and practical construction realities under mountainous constraints.
               </p>
             </ScrollReveal>
           </div>
@@ -282,9 +282,9 @@ export default function AboutPage() {
           <ScrollReveal direction="down">
             <div style={{ textAlign: "center" }}>
               <span style={{ color: "var(--color-primary-light)", fontWeight: "700", textTransform: "uppercase", fontSize: "0.85rem", letterSpacing: "0.08em" }}>The Specialists</span>
-              <h2 style={{ fontSize: "2rem", color: "var(--color-text-dark)", marginTop: "8px" }}>Our Leadership Team</h2>
+              <h2 style={{ fontSize: "2rem", color: "var(--color-text-dark)", marginTop: "8px" }}>Our Engineering Team</h2>
               <p style={{ color: "var(--color-text-gray)", maxWidth: "600px", margin: "10px auto 0" }}>
-                Meet the structural managers, designers, and executives coordinating our national developments.
+                Meet our team of registered structural consultants and concrete diagnostics experts coordinating our engineering evaluations.
               </p>
             </div>
           </ScrollReveal>
@@ -319,12 +319,12 @@ export default function AboutPage() {
       <section className={styles.ctaSection}>
         <ScrollReveal direction="scale">
           <div className={styles.ctaCard}>
-            <h2 className={styles.ctaTitle}>Start Constructing Your Vision Today</h2>
+            <h2 className={styles.ctaTitle}>Ensure the Safety & Stability of Your Structures</h2>
             <p className={styles.ctaText}>
-              Our engineering team is equipped to evaluate blueplans, layout scopes, and budget guidelines for your next project.
+              Our engineering team is equipped to perform seismic evaluations, NDT testing, and design verification for your buildings.
             </p>
             <Link href="/#contact">
-              <button className={styles.ctaBtn}>Consult With Our Estimators</button>
+              <button className={styles.ctaBtn}>Consult With Our Engineers</button>
             </Link>
           </div>
         </ScrollReveal>

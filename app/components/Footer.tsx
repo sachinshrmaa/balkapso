@@ -26,7 +26,7 @@ export default function Footer() {
           <Link href="/" className={`${styles.logo} ${styles.logoFooter}`}>
             <div className={`${styles.logoSymbol} ${styles.logoSymbolFooter}`} style={{ overflow: "hidden", position: "relative" }}>
               <Image 
-                src="/images/logo.png" 
+                src="/logo.png" 
                 alt="Balkapso Logo" 
                 fill 
                 sizes="38px"
@@ -38,7 +38,7 @@ export default function Footer() {
             </span>
           </Link>
           <p className={styles.footerDesc}>
-            A pioneer in safe, reliable, and energy-conscious constructions. Leading projects from vision to architectural landmark.
+            BALKAPSO is a niche structural engineering consultancy based in Sikkim. Designing safe, resilient structures and strengthening ageing or distressed buildings through research-backed solutions.
           </p>
           <div className={styles.socialIcons}>
             <a href={socials.facebook} target="_blank" rel="noopener noreferrer" className={styles.socialIconBtn} aria-label="Facebook">
@@ -57,23 +57,22 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className={styles.footerColTitle}>Construction Sectors</h4>
+          <h4 className={styles.footerColTitle}>Engineering Services</h4>
           <ul className={styles.footerLinks}>
-            <li className={styles.footerLinkItem}><Link href="/#services">Corporate Headquarters</Link></li>
-            <li className={styles.footerLinkItem}><Link href="/#services">Smart Residential Villas</Link></li>
-            <li className={styles.footerLinkItem}><Link href="/#services">Municipal Flyovers</Link></li>
-            <li className={styles.footerLinkItem}><Link href="/#services">Seismic Strengthening</Link></li>
-            <li className={styles.footerLinkItem}><Link href="/#services">LEED Sustainable Planning</Link></li>
+            <li className={styles.footerLinkItem}><Link href="/services/structural-design">Structural Design</Link></li>
+            <li className={styles.footerLinkItem}><Link href="/services/structural-retrofitting">Retrofitting & Rehabilitation</Link></li>
+            <li className={styles.footerLinkItem}><Link href="/services/structural-assessment">Structural Assessment & NDT</Link></li>
+            <li className={styles.footerLinkItem}><Link href="/services/structural-design">Peer Review & Verification</Link></li>
           </ul>
         </div>
 
         <div>
           <h4 className={styles.footerColTitle}>Quick Links</h4>
           <ul className={styles.footerLinks}>
-            <li className={styles.footerLinkItem}><Link href="/about">About Our Company</Link></li>
+            <li className={styles.footerLinkItem}><Link href="/about">About BALKAPSO</Link></li>
             <li className={styles.footerLinkItem}><Link href="/projects">Featured Projects</Link></li>
-            <li className={styles.footerLinkItem}><Link href="/#why-us">Why Choose Balkapso</Link></li>
-            <li className={styles.footerLinkItem}><Link href="/#contact">Contact Estimates Desk</Link></li>
+            <li className={styles.footerLinkItem}><Link href="/#why-us">Why Us</Link></li>
+            <li className={styles.footerLinkItem}><Link href="/#contact">Contact Engineering Desk</Link></li>
             <li className={styles.footerLinkItem}><a href="#">Company Careers</a></li>
           </ul>
         </div>
@@ -81,7 +80,7 @@ export default function Footer() {
         <div>
           <h4 className={styles.footerColTitle}>Newsletter Sign-up</h4>
           <p className={styles.newsletterDesc}>
-            Subscribe to receive updates on modern materials, building regulations, and quarterly portfolios.
+            Subscribe to receive updates on modern materials, Indian Standards building regulations, and project case studies.
           </p>
           <form onSubmit={(e) => e.preventDefault()} className={styles.newsletterForm}>
             <input 
@@ -101,7 +100,7 @@ export default function Footer() {
       <div className="container">
         <div className={styles.footerDivider}></div>
         <div className={styles.footerBottom}>
-          <p>&copy; {new Date().getFullYear()} Balkapso Constructions Inc. All rights reserved. Built to last.</p>
+          <p>&copy; {new Date().getFullYear()} BALKAPSO Construction. All rights reserved. Designing the Future. Strengthening the Existing.</p>
           <div className={styles.footerBottomLinks}>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Use</a>
