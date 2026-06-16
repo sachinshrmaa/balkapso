@@ -344,7 +344,7 @@ export default function AdminPage() {
     const projectData = {
       title,
       category,
-      image: image || "/images/project_commercial.png", // fallback suggestion
+      image: image || "/images/placeholder.svg", // fallback suggestion
       location,
       year,
       description,
@@ -723,7 +723,7 @@ export default function AdminPage() {
                                       alt={proj.title} 
                                       style={{ width: "100%", height: "100%", objectFit: "cover" }}
                                       onError={(e) => {
-                                        (e.target as HTMLImageElement).src = "/images/project_commercial.png";
+                                        (e.target as HTMLImageElement).src = "/images/placeholder.svg";
                                       }}
                                     />
                                   </div>

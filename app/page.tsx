@@ -150,7 +150,7 @@ export default function Home() {
           <div className={styles.heroVisual}>
             <div className={styles.imageWrapper}>
               <Image 
-                src="/images/hero_building.png" 
+                src="/images/placeholder.svg" 
                 alt="Balkapso Constructions Skyscraper Landmark" 
                 fill
                 style={{ objectFit: "cover" }}
@@ -185,25 +185,12 @@ export default function Home() {
               </div>
               <div className={styles.statItem}>
                 <span className={styles.statNumber}>
-                  <AnimatedCounter target={15} />
+                  <AnimatedCounter target={10} />
                   <span className={styles.statNumberAccent}>+</span>
                 </span>
                 <span className={styles.statLabel}>Years of Integrity</span>
               </div>
-              <div className={styles.statItem}>
-                <span className={styles.statNumber}>
-                  <AnimatedCounter target={45} />
-                  <span className={styles.statNumberAccent}>+</span>
-                </span>
-                <span className={styles.statLabel}>Engineers & Architects</span>
-              </div>
-              <div className={styles.statItem}>
-                <span className={styles.statNumber}>
-                  <AnimatedCounter target={99} />
-                  <span className={styles.statNumberAccent}>%</span>
-                </span>
-                <span className={styles.statLabel}>Client Satisfaction</span>
-              </div>
+             
             </div>
           </ScrollReveal>
         </div>
@@ -217,7 +204,7 @@ export default function Home() {
             <div className={styles.aboutImageCol}>
               <div className={styles.aboutImgWrapper}>
                 <Image 
-                  src="/images/project_commercial.png" 
+                  src="/images/placeholder.svg" 
                   alt="Modern Construction Site Commercial" 
                   fill
                   style={{ objectFit: "cover" }}
@@ -225,7 +212,7 @@ export default function Home() {
               </div>
               <div className={styles.aboutImgWrapper}>
                 <Image 
-                  src="/images/project_infrastructure.png" 
+                  src="/images/placeholder.svg" 
                   alt="High-grade Infrastructure Site" 
                   fill
                   style={{ objectFit: "cover" }}
@@ -235,7 +222,7 @@ export default function Home() {
             <div className={`${styles.aboutImageCol} ${styles.aboutImageColDown}`}>
               <div className={styles.aboutImgWrapper} style={{ height: "350px" }}>
                 <Image 
-                  src="/images/project_residential.png" 
+                  src="/images/placeholder.svg" 
                   alt="Luxury Residence Engineering" 
                   fill
                   style={{ objectFit: "cover" }}
@@ -453,7 +440,7 @@ export default function Home() {
           <ScrollReveal direction="right" className={styles.whyVisual}>
             <div style={{ position: "relative", width: "100%", height: "100%" }}>
               <Image 
-                src="/images/project_commercial.png" 
+                src="/images/placeholder.svg" 
                 alt="High-end commercial architecture building under blue sky" 
                 fill
                 style={{ objectFit: "cover" }}

@@ -53,19 +53,19 @@ const LEADERS = [
     name: "Tashi Namgyal",
     role: "Founder & Managing Director",
     bio: "Tashi has over 25 years of structural development experience in the Himalayan region, specializing in retrofitting existing masonry and RCC buildings.",
-    avatar: "/images/project_commercial.png"
+    avatar: "/images/placeholder.svg"
   },
   {
     name: "David Lepcha",
     role: "Lead Structural Engineer",
     bio: "David is a registered structural consultant with 18 years of experience in landslide-prone foundation designs and seismic ductile detailing.",
-    avatar: "/images/project_infrastructure.png"
+    avatar: "/images/placeholder.svg"
   },
   {
     name: "Elena Rai",
     role: "Head of NDT & Assessment",
     bio: "Elena leads our Non-Destructive Testing division. She is a specialist in concrete diagnostics and distress assessment interpretation.",
-    avatar: "/images/hero_building.png"
+    avatar: "/images/placeholder.svg"
   }
 ];
 
@@ -158,7 +158,7 @@ export default function AboutPage() {
           <ScrollReveal direction="right" className={styles.storyVisual}>
             <div style={{ position: "relative", width: "100%", height: "100%" }}>
               <Image
-                src="/images/hero_building.png"
+                src="/images/placeholder.svg"
                 alt="High rise landmark architecture representing Balkapso legacy"
                 fill
                 style={{ objectFit: "cover" }}

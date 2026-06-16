@@ -35,7 +35,7 @@ const FALLBACK_PROJECTS = [
   {
     title: "Sikkim State Secretariat Seismic Evaluation",
     category: "Assessment & NDT",
-    image: "/images/project_commercial.png",
+    image: "/images/placeholder.svg",
     location: "Gangtok, East Sikkim",
     year: "2024",
     description: "Comprehensive seismic vulnerability assessment of the multi-story Sikkim State Secretariat block. Utilized NDT techniques including Rebound Hammer testing and Ultrasonic Pulse Velocity (UPV) to determine concrete quality and map sub-surface distress. The technical reporting formed the basis for subsequent rehabilitation planning.",
@@ -52,7 +52,7 @@ const FALLBACK_PROJECTS = [
     id: "2",
     title: "Teesta Stage-V Infrastructure Rehabilitation",
     category: "Retrofitting & Rehab",
-    image: "/images/project_infrastructure.png",
+    image: "/images/placeholder.svg",
     location: "Singtam, East Sikkim",
     year: "2025",
     description: "Structural rehabilitation and CFRP (Carbon Fiber Reinforced Polymer) strengthening of distress-prone auxiliary structures at the Teesta hydro station. Undertook RCC jacketing and epoxy injection of structural cracks to restore structural load capacity, resisting seismic movements and high vibrations.",
@@ -68,7 +68,7 @@ const FALLBACK_PROJECTS = [
   {
     title: "Namchi Multi-Level Institutional Block",
     category: "Structural Design",
-    image: "/images/project_residential.png",
+    image: "/images/placeholder.svg",
     location: "Namchi, South Sikkim",
     year: "2025",
     description: "Complete structural engineering design of a new five-story institutional building incorporating earthquake-resistant RCC frame technology. Design compliant with Indian Standards IS 1893 (Seismic Design Criteria) and IS 13920 (Ductile Detailing), taking into account steep slope foundations and soft soil configurations.",
@@ -84,7 +84,7 @@ const FALLBACK_PROJECTS = [
   {
     title: "Jorethang Market Plaza Peer Review",
     category: "Structural Design",
-    image: "/images/hero_building.png",
+    image: "/images/placeholder.svg",
     location: "Jorethang, South Sikkim",
     year: "2024",
     description: "Independent structural peer review and design verification of the composite steel and concrete commercial plaza in Jorethang. Conducted detailed computational frame analysis to verify wind and seismic load resistance, suggesting key foundation adjustments for slope stability.",
@@ -100,7 +100,7 @@ const FALLBACK_PROJECTS = [
   {
     title: "Gangtok Commercial Hotel Retrofitting",
     category: "Retrofitting & Rehab",
-    image: "/images/project_commercial.png",
+    image: "/images/placeholder.svg",
     location: "Deorali, Gangtok",
     year: "2026",
     description: "Seismic retrofitting design and implementation for an existing six-story hospitality structure. The structure was reinforced using steel braced frames and concrete jacketing of the weak columns, improving building ductility and stability without altering architectural functionality.",
@@ -116,7 +116,7 @@ const FALLBACK_PROJECTS = [
   {
     title: "Rangpo High-Rise Distress Audit",
     category: "Assessment & NDT",
-    image: "/images/project_infrastructure.png",
+    image: "/images/placeholder.svg",
     location: "Rangpo, East Sikkim",
     year: "2026",
     description: "Non-destructive testing and technical interpretation of concrete degradation in a high-rise industrial facility near the border. Investigations included rebar cover depth assessment, carbonation depth tests, and core pull-out tests to establish safe residual service life and plan strengthening phases.",
