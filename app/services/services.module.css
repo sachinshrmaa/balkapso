@@ -55,6 +55,26 @@
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    padding: 120px 20px 60px;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 1.65rem;
+  }
+}
+
 /* Breadcrumbs */
 .breadcrumbs {
   display: flex;
@@ -99,6 +119,20 @@
   .grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contentSection {
+    padding: 50px 16px;
+  }
+
+  .sidebarCard {
+    padding: 24px 20px;
+  }
+
+  .contactBox {
+    padding: 24px 20px;
   }
 }
 
@@ -375,6 +409,29 @@
   box-shadow: 0 6px 20px rgba(0, 168, 255, 0.5);
   background-color: var(--color-bg-white);
   color: var(--color-primary-dark);
+}
+
+@media (max-width: 600px) {
+  .ctaSection {
+    padding: 60px 16px;
+  }
+
+  .ctaCard {
+    padding: 40px 24px;
+  }
+
+  .ctaTitle {
+    font-size: 1.6rem;
+  }
+
+  .ctaText {
+    font-size: 1rem;
+  }
+
+  .ctaBtn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 @keyframes fadeInUp {

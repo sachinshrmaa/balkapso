@@ -1171,16 +1171,27 @@
   position: fixed;
   bottom: 24px;
   right: 24px;
+  left: 24px;
   z-index: 3000;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   gap: 12px;
   pointer-events: none;
 }
 
+@media (max-width: 480px) {
+  .toastContainer {
+    bottom: 16px;
+    right: 16px;
+    left: 16px;
+  }
+}
+
 .toast {
   pointer-events: auto;
-  min-width: 320px;
+  width: 100%;
+  min-width: 0;
   max-width: 420px;
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
@@ -1288,26 +1299,75 @@
 
 /* --- RESPONSIVE LAYOUTS --- */
 @media (max-width: 992px) {
-  .dashboardLayout {
+  .adminContainer {
     grid-template-columns: 1fr;
-    gap: 30px;
   }
+
   .sidebar {
-    flex-direction: row;
-    flex-wrap: wrap;
+    position: relative;
+    top: auto;
     height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 20px;
+    overflow-x: auto;
   }
+
+  .sidebar > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+  }
+
+  .sidebarHeader {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .sidebarNav {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 0;
+    gap: 8px;
+  }
+
   .sidebarItem {
-    flex-grow: 1;
-    justify-content: center;
+    flex-grow: 0;
+    white-space: nowrap;
+    padding: 10px 14px;
+    font-size: 0.85rem;
   }
+
+  .sidebarFooter {
+    border-top: none;
+    padding-top: 0;
+    flex-shrink: 0;
+  }
+
   .logoutBtn {
-    flex-grow: 1;
+    width: auto;
+    white-space: nowrap;
+    padding: 10px 14px;
   }
+
+  .topbar {
+    padding: 16px 20px;
+  }
+
+  .contentContainer {
+    padding: 24px 20px;
+  }
+
   .modalFormGrid {
     grid-template-columns: 1fr;
     gap: 16px;
   }
+
   .modalContainer {
     max-width: 100%;
     max-height: 95vh;
@@ -1318,6 +1378,25 @@
   .statsGrid {
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .topbarActions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .projectsTableContainer {
+    overflow-x: auto;
+  }
+
+  .projectsTable {
+    min-width: 640px;
   }
 }
 
@@ -1349,5 +1428,14 @@
   .addBtn {
     width: 100%;
     justify-content: center;
+  }
+  .gateCard {
+    padding: 32px 24px;
+  }
+  .keypad {
+    gap: 10px;
+  }
+  .keypadBtn {
+    height: 50px;
   }
 }

@@ -49,9 +49,39 @@
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .heroTitle {
+    font-size: 2.1rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 1.7rem;
+  }
+
+  .heroSubtitle {
+    font-size: 0.95rem;
+  }
+}
+
 /* Portfolio Section */
 .portfolioSection {
   padding: 80px 24px;
+}
+
+@media (max-width: 600px) {
+  .portfolioSection {
+    padding: 50px 16px;
+  }
 }
 
 .filterBar {

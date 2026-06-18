@@ -4,6 +4,14 @@
   background-color: var(--color-bg-white);
 }
 
+@media (max-width: 600px) {
+  .storySection,
+  .valuesSection,
+  .leadershipSection {
+    padding: 60px 20px;
+  }
+}
+
 /* Page Hero */
 .hero {
   background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary)),
@@ -47,6 +55,30 @@
   background-image: radial-gradient(circle, var(--color-text-white) 1px, transparent 1px);
   background-size: 24px 24px;
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .heroTitle {
+    font-size: 2.1rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 1.7rem;
+  }
+
+  .heroSubtitle {
+    font-size: 0.95rem;
+  }
 }
 
 /* Our Story Grid */
@@ -102,6 +134,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
+}
+
+@media (max-width: 380px) {
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .valueCard {
@@ -361,6 +399,12 @@
   margin-top: 50px;
 }
 
+@media (max-width: 380px) {
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .teamCard {
   background-color: var(--color-bg-card);
   border-radius: var(--radius-md);
@@ -469,4 +513,27 @@
   transform: translateY(-2px);
   background-color: var(--color-bg-ice);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 600px) {
+  .ctaSection {
+    padding: 70px 16px;
+  }
+
+  .ctaCard {
+    padding: 40px 24px;
+  }
+
+  .ctaTitle {
+    font-size: 1.6rem;
+  }
+
+  .ctaText {
+    font-size: 1rem;
+  }
+
+  .ctaBtn {
+    width: 100%;
+    justify-content: center;
+  }
 }

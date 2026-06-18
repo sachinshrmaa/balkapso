@@ -55,6 +55,7 @@ html {
   font-size: 16px;
   background-color: var(--color-bg-white);
   color: var(--color-text-dark);
+  overflow-x: hidden;
 }
 
 body {

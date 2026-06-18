@@ -22,9 +22,10 @@ const db = getFirestore(app);
 // Initialize Storage
 const storage = getStorage(app);
 
-// Initialize Analytics conditionally as it is a browser-only feature
+// Initialize Analytics conditionally as it is a browser-only feature.
+// Requires a real projectId/measurementId, so skip when Firebase env vars aren't configured.
 let analytics: Analytics | null = null;
-if (typeof window !== "undefined") {
+if (typeof window !== "undefined" && firebaseConfig.projectId && firebaseConfig.measurementId) {
   isSupported().then((supported) => {
     if (supported) {
       analytics = getAnalytics(app);
