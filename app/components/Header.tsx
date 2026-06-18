@@ -47,7 +47,7 @@ export default function Header() {
           <Link href="/about" className={styles.navLink}>About</Link>
           <Link href="/#services" className={styles.navLink}>Services</Link>
           <Link href="/projects" className={styles.navLink}>Projects</Link>
-          <Link href="/#why-us" className={styles.navLink}>Why Us</Link>
+          <Link href="https://brdi.balkapso.com/" className={styles.navLink}>BRDI</Link>
           <Link href="/#contact" className={styles.navLink}>Contact</Link>
         </nav>
 
