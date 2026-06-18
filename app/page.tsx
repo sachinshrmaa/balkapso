@@ -540,8 +540,8 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className={styles.contactCardTitle}>Call Us Directly</h4>
-                    <p className={styles.contactCardText}>Engineering Desk: <a href="tel:+919434012345" className={styles.contactLink}>+91 94340 12345</a></p>
-                    <p className={styles.contactCardText}>Support Desk: <a href="tel:+913592201100" className={styles.contactLink}>+91 (3592) 201100</a></p>
+                    <p className={styles.contactCardText}>Engineering Desk: <a href="tel:+917076219337" className={styles.contactLink}>+917076219337</a></p>
+                    <p className={styles.contactCardText}>Support Desk: <a href="tel:+917076219337" className={styles.contactLink}>+917076219337</a></p>
                   </div>
                 </div>
 
@@ -551,8 +551,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className={styles.contactCardTitle}>Email Inquiries</h4>
-                    <p className={styles.contactCardText}>General: <a href="mailto:info@balkapso.com" className={styles.contactLink}>info@balkapso.com</a></p>
-                    <p className={styles.contactCardText}>Careers: <a href="mailto:careers@balkapso.com" className={styles.contactLink}>careers@balkapso.com</a></p>
+                    <p className={styles.contactCardText}>General: <a href="mailto:contact@balkapso.com" className={styles.contactLink}>contact@balkapso.com</a></p>
                   </div>
                 </div>
 

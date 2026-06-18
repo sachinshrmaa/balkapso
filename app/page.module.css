@@ -467,6 +467,11 @@
 
   .heroDescription {
     font-size: 1rem;
+    margin-bottom: 28px;
+  }
+
+  .heroCtas {
+    margin-bottom: 0;
   }
 
   .imageWrapper {
@@ -731,12 +736,15 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   position: relative;
+  width: 100%;
 }
 
 .aboutImageCol {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
+  min-width: 0;
 }
 
 .aboutImageColDown {
@@ -744,6 +752,7 @@
 }
 
 .aboutImgWrapper {
+  width: 100%;
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
@@ -1052,6 +1061,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .whyVisual {
+    height: 260px;
+  }
+}
+
 @media (max-width: 600px) {
   .whyFeaturesGrid {
     grid-template-columns: 1fr;
@@ -1296,6 +1311,7 @@
   flex-direction: column;
   gap: 8px;
   margin-bottom: 20px;
+  min-width: 0;
 }
 
 .formGroupLast {
@@ -1310,6 +1326,7 @@
 }
 
 .formInput {
+  width: 100%;
   padding: 14px 18px;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-medium);

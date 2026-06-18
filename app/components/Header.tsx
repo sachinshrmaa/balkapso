@@ -54,7 +54,7 @@ export default function Header() {
         <div className={styles.navActions}>
           <div className={styles.contactInfoMini}>
             <span>Engineering Desk</span>
-            <span className={styles.phoneNumber}>+91 94340 12345</span>
+            <span className={styles.phoneNumber}>+917076219337</span>
           </div>
           <Link href="/#contact">
             <button className={styles.quoteBtn}>Get a Quote</button>
@@ -79,7 +79,7 @@ export default function Header() {
         <Link href="/#why-us" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>Why Balkapso</Link>
         <Link href="/#contact" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>Contact Us</Link>
         <div style={{ marginTop: "10px", display: "flex", flexDirection: "column", gap: "10px" }}>
-          <span style={{ fontSize: "0.85rem", color: "var(--color-text-gray)" }}>Call: +91 94340 12345</span>
+          <span style={{ fontSize: "0.85rem", color: "var(--color-text-gray)" }}>Call: +917076219337</span>
           <Link href="/#contact" onClick={() => setMobileMenuOpen(false)}>
             <button className={styles.quoteBtn} style={{ width: "100%" }}>Get a Quote</button>
           </Link>
